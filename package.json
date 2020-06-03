@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/WRNoble/Express-React-API/issues"
   },
-  "homepage": "https://github.com/WRNoble/Express-React-API#readme"
+  "homepage": "https://github.com/WRNoble/Express-React-API#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
