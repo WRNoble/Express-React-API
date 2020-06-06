@@ -11,4 +11,10 @@ let bobRoss = new emperorModel({
     causeOfDeath: "NA"
 })
 
-bobRoss.save();
+bobRoss.save((error, data) => {
+    if(error) {
+        console.log("Error", error)
+    } else {
+        console.log("Success!", data)
+    }
+});

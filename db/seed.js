@@ -15,11 +15,9 @@ const emperorData = data.map(item => {
 
 RomanEmperor.deleteMany({})
     .then(() => {
-        Country.create(countryData)
-            .then(countries => {
-                console.log(countries)
-            })
-            .catch(err => {
-                console.log(err)
-            })
+        RomanEmperor.create(data)
+            .then(emperors => {
+                console.log(emperors);
+                process.exit();
+            });
     });
