@@ -3,10 +3,10 @@ const Schema = mongoose.Schema;
 
 const emperorSchema = new Schema({
     name: String,
-    reignStart: String,
     birth: String,
     birthProvidence: String,
     rise: String,
+    reignStart: String,
     dynasty: String,
     causeOfDeath: String
 });
