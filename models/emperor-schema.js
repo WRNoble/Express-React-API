@@ -8,7 +8,8 @@ const emperorSchema = new Schema({
     rise: String,
     reignStart: String,
     dynasty: String,
-    causeOfDeath: String
+    causeOfDeath: String,
+    image: Array //?
 });
 
 const Emperor = mongoose.model("Emperor", emperorSchema);
