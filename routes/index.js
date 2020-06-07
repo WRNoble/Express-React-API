@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-router.use('/Emperor', require('/emperor'));
+router.use('/Emperor', require('./emperor'));
 
 module.exports = router;
 

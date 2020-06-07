@@ -1,5 +1,5 @@
 const express = require('express');
-const emperorController = require('../constrollers/emperor');
+const emperorController = require('../controllers/emperor');
 const router = express.Router();
 
 router.get('/', emperorController.index);

@@ -8,7 +8,7 @@ const Emperor = new Schema({
     rise: String,
     reignStart: String,
     dynasty: String,
-    causeOfDeath: String,
+    causeOfDeath: String
 });
 
 module.exports = mongoose.model("Emperor", Emperor);
