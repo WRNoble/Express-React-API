@@ -1,7 +1,7 @@
 const mongoose = require("../db/connection");
 const Schema = mongoose.Schema;
 
-const emperorSchema = new Schema({
+const Emperor = new Schema({
     name: String,
     birth: String,
     birthProvidence: String,
@@ -11,5 +11,4 @@ const emperorSchema = new Schema({
     causeOfDeath: String,
 });
 
-const Emperor = mongoose.model("Emperor", emperorSchema);
-module.exports = Emperor;
+module.exports = mongoose.model("Emperor", Emperor);
