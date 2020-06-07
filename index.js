@@ -22,8 +22,4 @@ app.use("./routes/index");
 //     })
 // });
 
-
-
-
-
 app.listen(27017, ()=> console.log("listening on port 27017"));
