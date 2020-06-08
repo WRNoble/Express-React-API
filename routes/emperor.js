@@ -32,10 +32,22 @@ router.put('/id/:id', function(req, res) {
     })
 });
 
+router.put('/name/:name', function(req, res) {
+    Emperor.findOneById({'name': req.params.name}, req.body, { new: true }).then(emperor => {
+    res.json(emperor);
+})
+});
+
 router.delete('/id/:id', function(req, res) {
         Emperor.findOneAndRemove({ '_id': req.params.id}).then(emperor => {
         res.json(emperor);
     })
+});
+
+router.delete('/name/:name', function(req, res) {
+    Emperor.findOneAndRemove({ 'name': req.params.name}).then(emperor => {
+    res.json(emperor);
+})
 });
 
 module.exports = router;
