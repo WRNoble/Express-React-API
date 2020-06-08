@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
 const Emperor = require("../models/emperor-schema");
-const cors = require('cors');
+//const cors = require('cors');
 
-app.use(cors())
+//app.use(cors())
 
 
 router.get('/', function(req, res) {

@@ -7,6 +7,7 @@ const Emperor = new Schema({
     birthProvidence: String,
     rise: String,
     reignStart: String,
+    reignEnd: String,
     dynasty: String,
     causeOfDeath: String
 });
