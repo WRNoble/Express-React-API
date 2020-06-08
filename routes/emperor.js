@@ -1,9 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const Emperor = require("../models/emperor-schema");
-//const cors = require('cors');
 
-//app.use(cors())
 
 
 router.get('/', function(req, res) {
@@ -31,15 +29,15 @@ router.post('/', function(req, res) {
 });
 
 router.put('/id/:id', function(req, res) {
-        Emperor.findOneById({'_id': req.params.id}, req.body, { new: true }).then(emperor => {
-        res.json(emperor);
-    })
+    Emperor.findOneAndUpdate({'_id': req.params.id}, req.body, { new: true }).then(emperor => {
+    res.json(emperor);
+})
 });
 
 router.put('/name/:name', function(req, res) {
-    Emperor.findOneById({'name': req.params.name}, req.body, { new: true }).then(emperor => {
-    res.json(emperor);
-})
+        Emperor.findOneAndUpdate({'name': req.params.name}, req.body, { new: true }).then(emperor => {
+        res.json(emperor);
+    })
 });
 
 router.delete('/id/:id', function(req, res) {
