@@ -22,7 +22,7 @@ router.get('/id/:id', function(req, res) {
 
 router.post('/', function(req, res) {
         Emperor.create(req.body).then(emperor => {
-        res.json('/');
+        res.json(emperor);
     })
 });
 
