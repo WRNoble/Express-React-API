@@ -28,7 +28,7 @@ router.post('/', function(req, res) {
 
 router.put('/id/:id', function(req, res) {
         Emperor.findOneById({'_id': req.params.id}, req.body, { new: true }).then(emperor => {
-        res.json('/');
+        res.json(emperor);
     })
 });
 
@@ -37,17 +37,5 @@ router.delete('/id/:id', function(req, res) {
         res.json(emperor);
     })
 });
-// router.post('/', function(req, res) {
-//     res.json('/', req.params);
-
-// });
-// router.put('/emperor/:id', function(req, res){
-//     res.json(req.params.name);
-
-// });
-// router.delete('/emperor/:id', function(req, res){
-//     res.json(req.params.name);
-
-// });
 
 module.exports = router;
