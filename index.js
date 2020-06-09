@@ -2,6 +2,9 @@ const express = require('express');
 const app = express();
 const Emperor = require("./models/emperor-schema");
 const router = require("./routes/emperor.js");
+const cors = require("cors");
+
+app.use(cors());
 
 app.use(express.json());
 app.use(router);

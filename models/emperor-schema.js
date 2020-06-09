@@ -7,9 +7,11 @@ const Emperor = new Schema({
     birthProvidence: String,
     rise: String,
     reignStart: String,
-    reignEnd: String,
     dynasty: String,
     causeOfDeath: String
 });
 
 module.exports = mongoose.model("Emperor", Emperor);
+/**
+ * @api {model} creates a model of the emperor schema requiring Mongoose and exporting the new Emperor Schema.
+ */

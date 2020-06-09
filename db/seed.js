@@ -9,7 +9,6 @@ Emperor.deleteMany({}, function(){
             birthProvidence: record.fields.birth_prv,
             rise: record.fields.rise,
             reignStart: record.fields.reign_start,
-            reignEnd: record.fields.reign-encodeURI,
             dynasty: record.fields.dynasty,
             causeOfDeath: record.fields.cause
         })
