@@ -15,3 +15,7 @@ fetch(url)
             }
         })
     })
+
+/**
+ * @api {fetch} the fetch function which requires the data from the open source API
+ */
