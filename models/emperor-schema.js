@@ -9,6 +9,7 @@ const Emperor = new Schema({
   reignStart: String,
   dynasty: String,
   causeOfDeath: String,
+  image: Object,
 });
 
 module.exports = mongoose.model("Emperor", Emperor);

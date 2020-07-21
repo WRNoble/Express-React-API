@@ -11,6 +11,7 @@ Emperor.deleteMany({}, function () {
       reignStart: record.fields.reign_start,
       dynasty: record.fields.dynasty,
       causeOfDeath: record.fields.cause,
+      image: record.fields.image,
     });
   });
 });

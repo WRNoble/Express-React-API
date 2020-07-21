@@ -13,14 +13,14 @@
       "datasetid": "roman-emperors",
       "recordid": "69eb51535f1919a4ae32ac2cc7aed59898a289f5",
       "fields": {
-        "reign_start": "0026-01-16T00:00:00+00:00",
+        "reign_start": "26",
         "index": "1",
         "verif_who": "Reddit user zonination",
         "killer": "Wife",
         "birth_cty": "Rome",
         "notes": "birth, reign.start are BCE. Assign negative for correct ISO 8601 dates. Cause may have been Natural",
         "rise": "Birthright",
-        "birth": "0062-09-23T00:00:00+00:00",
+        "birth": "62",
         "dynasty": "Julio-Claudian",
         "death": "0014-08-19T00:00:00+00:00",
         "birth_prv": "Italia",
@@ -2827,4 +2827,3 @@
     }
   ]
 }
-
